@@ -1,0 +1,161 @@
+{
+  "layer": "top",
+  // "height": 20, // Waybar height (to be removed for auto height)
+  "position": "bottom",
+  "modules-left": [
+    "sway/mode",
+    "sway/workspaces",
+    "custom/sep",
+    "sway/language",
+    "idle_inhibitor"
+  ],
+  "modules-center": ["mpd", "clock", "custom/notification"],
+  "modules-right": [
+    "cpu",
+    "temperature",
+    "custom/sep",
+    "memory",
+    "disk",
+    "custom/sep",
+    "battery",
+    "pulseaudio",
+    "custom/sep",
+    "upower",
+    "tray"
+  ],
+  // Modules configuration
+  "sway/workspaces": {
+    "disable-scroll": false,
+    "all-outputs": true,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10",
+      "urgent": " ",
+      // "focused": " ",
+      "default": " "
+    }
+  },
+  "sway/mode": {
+    "format": "<span style=\"italic\">{}</span>"
+  },
+  "sway/language": {
+    "format": "{short} "
+  },
+  "custom/sep": {
+    "format": " ◆ "
+  },
+  "mpris": {
+    "format": "{title} ",
+    "format-paused": "{title} ",
+    "ignored-players": ["brave"]
+  },
+  "mpd": {
+    "format": "{artist} - {title} ",
+    "format-paused": "{artist} - {title} ",
+    "on-click": "mpc toggle"
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "",
+      "deactivated": ""
+    }
+  },
+  "tray": {
+    "spacing": 5
+  },
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%H:%M} ",
+    "format-alt": "{:%A, %B %d, %Y} "
+  },
+  "cpu": {
+    "format": "{usage}% ",
+    "tooltip": false
+  },
+  "memory": {
+    "format": "{}% "
+  },
+  "disk": {
+    "format": "<span foreground='#928374'></span>{percentage_free}% ",
+    "states": {
+      "warning": 70,
+      "critical": 90
+    }
+  },
+  "temperature": {
+    "critical-threshold": 70,
+    "format": "{temperatureC}°C {icon}",
+    "format-icons": ["", "", ""],
+    "thermal-zone": 5,
+    "hwmon-path": "/sys/class/hwmon/hwmon5/temp1_input"
+  },
+  "backlight": {
+    "format": "{icon} {percent}%",
+    "format-icons": [" ", " "],
+    "on-scroll-up": "light -A 1",
+    "on-scroll-down": "light -U 1"
+  },
+  "battery": {
+    "states": {
+      "warning": 40,
+      "critical": 20
+    },
+    "format": "{capacity}% {icon}",
+    "tooltip-format": "{timeTo}, {capacity}%",
+    "format-charging": "{capacity}% ",
+    "format-plugged": " ",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "upower": {
+    // "format": "{percentage} ",
+    "format": "",
+    "narive-path": "/org/freedesktop/UPower/devices/headset_dev_28_6F_40_B4_05_AB"
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-bluetooth-muted": "{volume}%   ",
+    "format-muted": "  ",
+    "format-source-muted": " ",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": " ",
+      "default": ["", "", ""]
+    },
+    "tooltip-format": "{desc}, {volume}%",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+    "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+    "on-click-middle": "pavucontrol"
+  },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{} {icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  }
+}

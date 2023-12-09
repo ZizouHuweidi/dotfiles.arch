@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+# Script name: dmconf
+# Description: Choose from a list of configuration files to edit.
+# Dependencies: dmenu
+# GitLab: https://www.gitlab.com/dwt1/dmscripts
+# Contributors: Derek Taylor
+
+# Defining the text editor to use.
+# DMENUEDITOR="vim"
+# DMENUEDITOR="nvim"
+# READER="kitty -e zathura"
+READER="kitty -e zathura"
+
+# An array of options to choose.
+# You can edit this list to add/remove config files.
+declare -a options=(
+	"The Holy Quran - $HOME/Documents/eBooks/Holy_Quran_Full.pdf"
+	"The Sealed Nectar - $HOME/Documents/eBooks/English_ArRaheeq_AlMakhtum_THE_SEALED_NECTAR.pdf"
+	"Al Nawawi 40 Hadith - $HOME/Documents/eBooks/al-nawawi.pdf"
+	"Al Ghazali - $HOME/Documents/eBooks/Al-Ghazalis_Philosophical_Theology_by_Frank_Griffel.pdf"
+	"The Prince - $HOME/Documents/eBooks/The_Prince.pdf"
+	"Introduction to Algorithms - $HOME/Documents/eBooks/programming-books/Data-Structures/intro-to-algorithms.pdf"
+	"The C++ Programming Language - $HOME/Documents/eBooks/programming-books/Cpp/cpp-programming-language.pdf"
+	"The Go Programming Language - $HOME/Documents/eBooks/programming-books/Go/The.Go.Programming.Language.pdf"
+	"Writing an interpreter in Go - $HOME/Documents/eBooks/programming-books/Go/writing-an-interpreter-in-go.pdf"
+	"Writing a compiler in Go - $HOME/Documents/eBooks/programming-books/Go/writing-a-compiler-in-go.pdf"
+	# "The Bitcoin Standard - $HOME/Documents/eBooks/The_Bitcoin_Standard.epub"
+	# "quit"
+)
+
+# Piping the above array into dmenu.
+# We use "printf '%s\n'" to format the array one item to a line.
+choice=$(printf '%s\n' "${options[@]}" | wofi --show dmenu -i 20 -p 'Choose Book')
+
+# What to do when/if we choose 'quit'.
+if [[ "$choice" == "quit" ]]; then
+	echo "Program terminated." && exit 1
+
+# What to do when/if we choose a file to edit.
+elif [ "$choice" ]; then
+	cfg=$(printf '%s\n' "${choice}" | awk '{print $NF}')
+	$READER "$cfg"
+
+# What to do if we just escape without choosing anything.
+else
+	echo "Program terminated." && exit 1
+fi
