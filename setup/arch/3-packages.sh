@@ -36,7 +36,7 @@ install_packages() {
 	sudo pacman --needed --noconfirm -S kdeconnect
 
 	## browsers
-	yay --needed --noconfirm -S vivaldi
+	yay --needed --noconfirm -S vivaldi firefox
 
 	## terminals
 	sudo pacman --needed --noconfirm -S kitty python-pillow
@@ -90,13 +90,16 @@ install_packages() {
 		sudo pacman --needed --noconfirm -S docker docker-compose
 
 		## Go
-		sudo pacman --needed --noconfirm -S go
-
-		## Python
-		sudo pacman --needed --noconfirm -S python-pip python-pipx python-ipykernal
+		sudo pacman --needed --noconfirm -S go hugo
 
 		## TS
 		yay --needed --noconfirm -S nvm npm deno
+
+		## Python
+		sudo pacman --needed --noconfirm -S python-pip python-pipx
+
+		## JVM
+		yay --needed --noconfirm -S jdk-openjdk maven
 
 		## virtual machines
 		# sudo pacman --needed --noconfirm -S virt-manager

@@ -3,8 +3,8 @@ audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:Visualizer
 audio_device_state:1:lossless
 state: pause
-current: 3
-time: 3790.848000
+current: 84
+time: 35.631000
 random: 0
 repeat: 1
 single: 0
@@ -95,4 +95,7 @@ playlist_begin
 79:Mohammad_Ayyub/020.mp3
 80:Mohammad_Ayyub/024.mp3
 81:Mohammad_Ayyub/041.mp3
+82:Anasheed/ast7yeeta-ta3sini.mp3
+83:Ali_Jaber/036.mp3
+84:Ali_Jaber/037.mp3
 playlist_end
