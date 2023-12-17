@@ -98,9 +98,6 @@ install_packages() {
 		## Python
 		sudo pacman --needed --noconfirm -S python-pip python-pipx
 
-		## JVM
-		yay --needed --noconfirm -S jdk-openjdk maven
-
 		## virtual machines
 		# sudo pacman --needed --noconfirm -S virt-manager
 

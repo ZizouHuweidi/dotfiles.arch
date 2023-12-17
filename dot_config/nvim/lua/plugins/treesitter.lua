@@ -14,6 +14,7 @@ return {
         "c",
         "cpp",
         "java",
+        "templ",
       },
     },
   },
