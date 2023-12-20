@@ -87,16 +87,16 @@ install_packages() {
 
 		# dev
 		yay --needed --noconfirm -S visual-studio-code-bin
-		sudo pacman --needed --noconfirm -S docker docker-compose
+		sudo pacman --needed --noconfirm -S docker minikube kubectl
 
 		## Go
-		sudo pacman --needed --noconfirm -S go hugo
+		sudo pacman --needed --noconfirm -S go hugo ollama
 
 		## TS
 		yay --needed --noconfirm -S nvm npm deno
 
 		## Python
-		sudo pacman --needed --noconfirm -S python-pip python-pipx
+		sudo pacman --needed --noconfirm -S python-pip python-pipx python-ipykernal
 
 		## virtual machines
 		# sudo pacman --needed --noconfirm -S virt-manager
