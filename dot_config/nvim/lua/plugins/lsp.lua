@@ -5,6 +5,7 @@ return {
       ensure_installed = {
         "angular-language-server",
         "vue-language-server",
+        "zls",
         "templ",
       },
     },

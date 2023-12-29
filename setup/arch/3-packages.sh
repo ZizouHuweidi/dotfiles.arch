@@ -14,7 +14,7 @@ install_packages() {
 
 	## files
 	sudo pacman --needed --noconfirm -S syncthing zathura zathura-pdf-mupdf
-	sudo pacman --needed --noconfirm -S neovim neovide file-roller lazyvim
+	sudo pacman --needed --noconfirm -S neovim neovide file-roller
 	sudo pacman --needed --noconfirm -S lf transmission-gtk transmission-cli ffmpegthumbnailer yt-dlp
 
 	## themes
@@ -36,14 +36,14 @@ install_packages() {
 	sudo pacman --needed --noconfirm -S kdeconnect
 
 	## browsers
-	yay --needed --noconfirm -S vivaldi firefox
+	yay --needed --noconfirm -S vivaldi
 
 	## terminals
 	sudo pacman --needed --noconfirm -S kitty python-pillow
 	sudo pacman --needed --noconfirm -S zsh bash-completion fzf fzf-tab-bin-git zsh-autosuggestions zsh-syntax-highlighting ripgrep fd starship tldr zoxide
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-	## sway/gnome
+	## sway
 	sudo pacman --needed --noconfirm -S sway swaybg swayidle swaylock xdg-desktop-portal-wlr
 	sudo pacman --needed --noconfirm -S waybar
 	yay --needed --noconfirm -S swayhide
@@ -87,16 +87,18 @@ install_packages() {
 
 		# dev
 		yay --needed --noconfirm -S visual-studio-code-bin
-		sudo pacman --needed --noconfirm -S docker minikube kubectl
 
 		## Go
-		sudo pacman --needed --noconfirm -S go hugo ollama
+		sudo pacman --needed --noconfirm -S go hugo ollama docker caddy
 
 		## TS
 		yay --needed --noconfirm -S nvm npm deno
 
+		## Zig
+		yay --needed --noconfirm -S zig
+
 		## Python
-		sudo pacman --needed --noconfirm -S python-pip python-pipx python-ipykernal
+		sudo pacman --needed --noconfirm -S python-pip python-pipx
 
 		## virtual machines
 		# sudo pacman --needed --noconfirm -S virt-manager
