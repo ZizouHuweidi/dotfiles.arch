@@ -86,10 +86,10 @@ install_packages() {
 		sudo pacman --needed --noconfirm -S libreoffice-fresh gimp obsidian
 
 		# dev
-		yay --needed --noconfirm -S visual-studio-code-bin
+		yay --needed --noconfirm -S visual-studio-code-bin docker docker-compose
 
 		## Go
-		sudo pacman --needed --noconfirm -S go hugo ollama docker caddy
+		sudo pacman --needed --noconfirm -S go hugo ollama caddy
 
 		## TS
 		yay --needed --noconfirm -S nvm npm deno
