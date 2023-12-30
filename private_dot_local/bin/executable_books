@@ -6,26 +6,25 @@
 # GitLab: https://www.gitlab.com/dwt1/dmscripts
 # Contributors: Derek Taylor
 
-# Defining the text editor to use.
-# DMENUEDITOR="vim"
-# DMENUEDITOR="nvim"
 # READER="kitty -e zathura"
-READER="kitty -e zathura"
+READER="kitty -e swayhide zathura"
 
 # An array of options to choose.
 # You can edit this list to add/remove config files.
 declare -a options=(
-	"The Holy Quran - $HOME/Documents/eBooks/Holy_Quran_Full.pdf"
-	"The Sealed Nectar - $HOME/Documents/eBooks/English_ArRaheeq_AlMakhtum_THE_SEALED_NECTAR.pdf"
-	"Al Nawawi 40 Hadith - $HOME/Documents/eBooks/al-nawawi.pdf"
-	"Al Ghazali - $HOME/Documents/eBooks/Al-Ghazalis_Philosophical_Theology_by_Frank_Griffel.pdf"
-	"The Prince - $HOME/Documents/eBooks/The_Prince.pdf"
-	"Introduction to Algorithms - $HOME/Documents/eBooks/programming-books/Data-Structures/intro-to-algorithms.pdf"
-	"The C++ Programming Language - $HOME/Documents/eBooks/programming-books/Cpp/cpp-programming-language.pdf"
-	"The Go Programming Language - $HOME/Documents/eBooks/programming-books/Go/The.Go.Programming.Language.pdf"
-	"Writing an interpreter in Go - $HOME/Documents/eBooks/programming-books/Go/writing-an-interpreter-in-go.pdf"
-	"Writing a compiler in Go - $HOME/Documents/eBooks/programming-books/Go/writing-a-compiler-in-go.pdf"
-	# "The Bitcoin Standard - $HOME/Documents/eBooks/The_Bitcoin_Standard.epub"
+	"The Holy Quran - $HOME/books/deen/Holy_Quran_Full.pdf"
+	"The Sealed Nectar - $HOME/books/deen/English_ArRaheeq_AlMakhtum_THE_SEALED_NECTAR.pdf"
+	"Al Nawawi 40 Hadith - $HOME/books/deen/al-nawawi.pdf"
+	"Al Ghazali - $HOME/books/deen/Al-Ghazalis_Philosophical_Theology_by_Frank_Griffel.pdf"
+	"Intro to Algos - $HOME/books/tech/programming/dsa/intro-to-algorithms.pdf"
+	"Designing Data Intensive Application - $HOME/books/tech/backend/distributed/data-intensive-applications.pdf"
+	"Distributed Services With Go - $HOME/books/tech/backend/distributed/distributed-services-with-go.pdf"
+	"Cloud Native Programming with Go - $HOME/books/tech/backend/distributed/cloud-native-programming-with-golang.epub"
+	"Writing an interpreter in Go - $HOME/books/tech/compilers/writing-an-interpreter-in-go.pdf"
+	"Writing a compiler in Go - $HOME/books/tech/compilers/writing-a-compiler-in-go.pdf"
+	"The Pragmatic Programmer - $HOME/books/tech/programming/The-Pragmatic-Programmer.pdf"
+	"Mastering Kubernetes - $HOME/books/tech/devops/kubernetes/mastering-kubernetes.pdf"
+	"Networking and Kubernetes - $HOME/books/tech/devops/kubernetes/networking-and-kubernetes.pdf"
 	# "quit"
 )
 
