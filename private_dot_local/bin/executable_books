@@ -7,7 +7,7 @@
 # Contributors: Derek Taylor
 
 # READER="kitty -e zathura"
-READER="kitty -e swayhide zathura"
+READER="kitty -e zathura"
 
 # An array of options to choose.
 # You can edit this list to add/remove config files.

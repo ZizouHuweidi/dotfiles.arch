@@ -3,8 +3,8 @@ audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:Visualizer
 audio_device_state:1:lossless
 state: pause
-current: 84
-time: 35.631000
+current: 87
+time: 1.886000
 random: 0
 repeat: 1
 single: 0
@@ -98,4 +98,7 @@ playlist_begin
 82:Anasheed/ast7yeeta-ta3sini.mp3
 83:Ali_Jaber/036.mp3
 84:Ali_Jaber/037.mp3
+85:Mohammed_Siddiq_Al-Minshawi/002.mp3
+86:Mahmood_Ali_Albana/004.mp3
+87:Mahmood_Ali_Albana/002.mp3
 playlist_end
