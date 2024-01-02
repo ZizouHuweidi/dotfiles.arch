@@ -39,9 +39,8 @@ install_packages() {
 	yay --needed --noconfirm -S vivaldi
 
 	## terminals
-	sudo pacman --needed --noconfirm -S kitty python-pillow
+	sudo pacman --needed --noconfirm -S kitty python-pillow bat
 	sudo pacman --needed --noconfirm -S zsh bash-completion fzf fzf-tab-bin-git zsh-autosuggestions zsh-syntax-highlighting ripgrep fd starship tldr zoxide
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 	## sway
 	sudo pacman --needed --noconfirm -S sway swaybg swayidle swaylock xdg-desktop-portal-wlr
@@ -54,8 +53,8 @@ install_packages() {
 	sudo pacman --needed --noconfirm -S tesseract-data-eng
 
 	## fonts
-	sudo pacman --needed --noconfirm -S font-manager
-	sudo pacman --needed --noconfirm -S adobe-source-code-pro-fonts adobe-source-sans-fonts
+	sudo pacman --needed --noconfirm -S font-manager noto-fonts ttf-jetbrains-mono-nerd ttf-firacode-nerd ttf-noto-nerd
+	sudo pacman --needed --noconfirm -S adobe-source-code-pro-fonts adobe-source-sans-fonts 
 	sudo pacman --needed --noconfirm -S noto-fonts-emoji nerd-fonts-source-code-pro awesome-terminal-fonts nerd-fonts-jetbrains-mono ttf-jetbrains-mono
 	sudo pacman --needed --noconfirm -S ttf-font-awesome ttf-hack ttf-fira-code ttf-iosevka-nerd ttf-material-design-iconic-font noto-fonts-emoji
 	sudo pacman --needed --noconfirm -S ttf-meslo-nerd-font-powerlevel10k ttf-ms-fonts ttf-ubuntu-font-family fontconfig
