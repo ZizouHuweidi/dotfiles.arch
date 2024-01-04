@@ -3,8 +3,8 @@ audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:Visualizer
 audio_device_state:1:lossless
 state: pause
-current: 87
-time: 1.886000
+current: 33
+time: 120.160000
 random: 0
 repeat: 1
 single: 0
@@ -91,14 +91,10 @@ playlist_begin
 75:Mahmood_Ali_Albana/071.mp3
 76:Mahmood_Ali_Albana/041.mp3
 77:Ali_Jaber/011.mp3
-78:Mohammad_Ayyub/005.mp3
-79:Mohammad_Ayyub/020.mp3
-80:Mohammad_Ayyub/024.mp3
-81:Mohammad_Ayyub/041.mp3
-82:Anasheed/ast7yeeta-ta3sini.mp3
-83:Ali_Jaber/036.mp3
-84:Ali_Jaber/037.mp3
-85:Mohammed_Siddiq_Al-Minshawi/002.mp3
-86:Mahmood_Ali_Albana/004.mp3
-87:Mahmood_Ali_Albana/002.mp3
+78:Anasheed/ast7yeeta-ta3sini.mp3
+79:Ali_Jaber/036.mp3
+80:Ali_Jaber/037.mp3
+81:Mohammed_Siddiq_Al-Minshawi/002.mp3
+82:Mahmood_Ali_Albana/004.mp3
+83:Mahmood_Ali_Albana/002.mp3
 playlist_end

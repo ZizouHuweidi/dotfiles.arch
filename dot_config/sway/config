@@ -145,7 +145,7 @@ bindgesture swipe:down workspace back_and_forth
 # -- Apps --
 
 bindsym $mod+Return exec kitty 
-bindsym $mod+Control+Return exec nautilus
+bindsym $mod+Control+Return exec thunar
 bindsym $mod+e exec  wofi-emoji
 bindsym $mod+Shift+e exec  code
 bindsym $mod+Shift+v exec  kitty -e nvim
