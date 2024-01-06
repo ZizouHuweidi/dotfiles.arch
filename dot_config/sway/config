@@ -67,7 +67,7 @@ for_window [app_id=".*"] opacity 0.95
 # }}}
 
 # Output {{{
-output * bg ~/Wallpapers/gruvbox_listentoyourheart.jpg fill
+output * bg ~/Wallpapers/guts-forest.jpg fill
 output * scale 1.1
 # output * bg "#282828" solid_color
 # }}}

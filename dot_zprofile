@@ -15,12 +15,3 @@ export XDG_DATA_HOME=$HOME/.local/share
 # Environment variables
 # export QT_QPA_PLATFORMTHEME=qt6ct
 export QT_QPA_PLATFORMTHEME=qt5ct
-
-
-
-
-
-
-
-# Added by Toolbox App
-export PATH="$PATH:/home/zizou/.local/share/JetBrains/Toolbox/scripts"

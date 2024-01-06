@@ -71,6 +71,7 @@
       <property name="profile-shape" type="int" value="0"/>
       <property name="position-commands-alternate" type="bool" value="false"/>
       <property name="recent" type="array">
+        <value type="string" value="xfce4-terminal.desktop"/>
         <value type="string" value="xfce-settings-manager.desktop"/>
       </property>
     </property>

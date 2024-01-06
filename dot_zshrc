@@ -110,14 +110,12 @@ HISTFILE=~/.zsh_history
 #export PATH="$HOME/.local/bin":$PATH
 #export MANPAGER='nvim +Man!'
 #export MANWIDTH=999
-export PATH=$HOME/go/bin:$PATH
+export GOPATH=$HOME/.local/share/go
+export PATH=$HOME/.local/share/go/bin:$PATH
+# export PATH=$HOME/go/bin:$PATH
 # Load Angular CLI autocompletion.
 source <(ng completion script)
-#export GOPATH=$HOME/.local/share/go
-#export PATH=$HOME/.fnm:$PATH
 #export PATH="$PATH:./node_modules/.bin"
-#eval "$(fnm env)"
-# eval "$(zoxide init zsh)"
 # eval "`pip completion --zsh`"
 # }}}
 
@@ -376,6 +374,3 @@ compinit
 
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
-
-
-

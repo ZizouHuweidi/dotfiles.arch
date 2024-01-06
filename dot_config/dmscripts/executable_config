@@ -74,7 +74,7 @@ declare -A confedit_list
 confedit_list[confedit]="$HOME/.config/dmscripts/config"
 confedit_list[sway]="$HOME/.config/sway/config"
 confedit_list[waybar]="$HOME/.config/waybar/config.jsonc"
-confedit_list[arch]="$HOME/setup/arch/3-packages.sh"
+confedit_list[arch]="$HOME/setup/3-packages.sh"
 confedit_list[nvim]="$HOME/.config/nvim/init.lua"
 confedit_list[kitty]="$HOME/.config/kitty/kitty.conf"
 confedit_list[lf]="$HOME/.config/lf/lfrc"

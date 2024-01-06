@@ -88,16 +88,16 @@ install_packages() {
 		yay --needed --noconfirm -S visual-studio-code-bin docker docker-compose
 
 		## Go
-		sudo pacman --needed --noconfirm -S go hugo ollama caddy
+		sudo pacman --needed --noconfirm -S go hugo ollama caddy protobuf
 
 		## TS
 		yay --needed --noconfirm -S nvm npm deno
 
-		## Zig
-		yay --needed --noconfirm -S zig
-
 		## Python
 		sudo pacman --needed --noconfirm -S python-pip python-pipx
+
+		## Zig
+		yay --needed --noconfirm -S zig
 
 		## virtual machines
 		# sudo pacman --needed --noconfirm -S virt-manager
