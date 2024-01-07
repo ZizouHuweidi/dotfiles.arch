@@ -96,8 +96,8 @@ install_packages() {
 		## Python
 		sudo pacman --needed --noconfirm -S python-pip python-pipx
 
-		## Zig
-		yay --needed --noconfirm -S zig
+		## C
+		yay --needed --noconfirm -S clang zig
 
 		## virtual machines
 		# sudo pacman --needed --noconfirm -S virt-manager
