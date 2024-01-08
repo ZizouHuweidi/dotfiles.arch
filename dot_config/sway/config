@@ -111,7 +111,7 @@ exec ~/.config/sway/bin/wlaunch
 # exec python3 ~/.config/sway/bin/columns.py
 
 exec gammastep-indicator
-exec /usr/lib/kdeconnectd -platform offscreen 
+# exec /usr/lib/kdeconnectd -platform offscreen 
 exec blueman-applet
 exec mpd
 

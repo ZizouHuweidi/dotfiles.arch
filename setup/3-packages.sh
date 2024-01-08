@@ -33,7 +33,7 @@ install_packages() {
 	## network
 	sudo pacman --needed --noconfirm -S network-manager-applet networkmanager nm-connection-editor wireless_tools
 	sudo pacman --needed --noconfirm -S blueman
-	sudo pacman --needed --noconfirm -S kdeconnect
+	# sudo pacman --needed --noconfirm -S kdeconnect
 
 	## browsers
 	yay --needed --noconfirm -S vivaldi
@@ -93,11 +93,8 @@ install_packages() {
 		## TS
 		yay --needed --noconfirm -S nvm npm deno
 
-		## Python
-		sudo pacman --needed --noconfirm -S python-pip python-pipx
-
-		## C
-		yay --needed --noconfirm -S clang zig
+		## Other
+		sudo pacman --needed --noconfirm -S python-pip python-pipx clang #zig
 
 		## virtual machines
 		# sudo pacman --needed --noconfirm -S virt-manager
