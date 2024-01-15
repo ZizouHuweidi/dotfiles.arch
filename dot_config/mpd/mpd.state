@@ -3,8 +3,8 @@ audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:Visualizer
 audio_device_state:1:lossless
 state: pause
-current: 33
-time: 3738.120000
+current: 92
+time: 1855.671000
 random: 0
 repeat: 1
 single: 0
@@ -97,4 +97,13 @@ playlist_begin
 81:Mohammed_Siddiq_Al-Minshawi/002.mp3
 82:Mahmood_Ali_Albana/004.mp3
 83:Mahmood_Ali_Albana/002.mp3
+84:Anasheed/ya-rajaai.mp3
+85:Anasheed/no-sorrow-for-the-dunya.mp3
+86:Anasheed/covenant-will-not-forget.mp3
+87:Anasheed/aya-man-yada3i-alfahm.mp3
+88:Surah Rahman - Mishary Rashid Al Afasy سورة الرحمن - مشاري العفاسي ( 256kbps cbr ).mp3
+89:The Beneficent ( 256kbps cbr ).mp3
+90:Ali_Jaber/033.mp3
+91:Maher_Al-Muaiqly/007.mp3
+92:Mahmood_Ali_Albana/005.mp3
 playlist_end
