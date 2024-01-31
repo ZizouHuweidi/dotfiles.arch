@@ -112,6 +112,7 @@ HISTFILE=~/.zsh_history
 #export MANWIDTH=999
 export GOPATH=$HOME/.local/share/go
 export PATH=$HOME/.local/share/go/bin:$PATH
+export PATH=$HOME/.cargo/bin/:$PATH
 # export PATH=$HOME/go/bin:$PATH
 # Load Angular CLI autocompletion.
 source <(ng completion script)
@@ -183,18 +184,25 @@ alias newtag='git tag -a'
 alias gt="nvim ~/.gittoken"
 
 # #list
-alias ls='ls --color=auto'
-alias la='ls -a'
-alias ll='ls -la'
-alias l='ls'
-alias l.="ls -A | egrep '^\.'"
+# alias ls='ls --color=auto'
+# alias la='ls -a'
+# alias ll='ls -la'
+# alias l='ls'
+# alias l.="ls -A | egrep '^\.'"
  
 # Changing "ls" to "exa"
-#alias ls='exa -al --color=always --group-directories-first' # my preferred listing
-#alias la='exa -a --color=always --group-directories-first'  # all files and dirs
-#alias ll='exa -l --color=always --group-directories-first'  # long format
-#alias lt='exa -aT --color=always --group-directories-first' # tree listing
-#alias l.='exa -a | egrep "^\."'
+# alias ls='exa --color=always  --group-directories-first'
+# alias la='exa -a --color=always  --group-directories-first'
+# alias ll='exa -l --color=always  --group-directories-first'
+# alias lt='exa -aT --color=always --group-directories-first'
+# alias l.='exa -a | egrep "^\."'
+
+# Changing "ls" to "lsd"
+alias ls='lsd --color=always  --group-directories-first'
+alias la='lsd -a --color=always  --group-directories-first'
+alias ll='lsd -l --color=always  --group-directories-first'
+alias lt='lsd -aT --color=always --group-directories-first'
+alias l.='lsd -a | egrep "^\."'
 
 #fix obvious typo's
 # alias cd..='cd ..'

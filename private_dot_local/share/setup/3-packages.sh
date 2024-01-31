@@ -48,9 +48,9 @@ install_packages() {
 	yay --needed --noconfirm -S swayhide
 
 	# wayland
-	sudo pacman --needed --noconfirm -S light slurp grim wofi swappy xorg-xwayland
-	yay --needed --noconfirm -S swaync clipman nwg-look wlogout wofi-emoji wdisplays wl-clipboard wf-recorder wob
-	sudo pacman --needed --noconfirm -S tesseract-data-eng
+	sudo pacman --needed --noconfirm -S light slurp grim wofi swappy xorg-xwayland polkit-gnome
+	yay --needed --noconfirm -S swaync cliphist nwg-look wlogout emote wdisplays wl-clipboard wf-recorder wob
+	sudo pacman --needed --noconfirm -S tesseract-data-eng wl-mirror xwaylandvideobridge 
 
 	## fonts
 	sudo pacman --needed --noconfirm -S font-manager noto-fonts ttf-jetbrains-mono-nerd ttf-firacode-nerd ttf-noto-nerd
@@ -87,13 +87,13 @@ install_packages() {
 		# dev
 		yay --needed --noconfirm -S visual-studio-code-bin docker docker-compose
 
-		## Go
-		sudo pacman --needed --noconfirm -S go hugo ollama caddy protobuf syncthing rclone
+		## go
+		sudo pacman --needed --noconfirm -S go hugo ollama caddy protobuf syncthing
 
-		## TS
+		## ts
 		yay --needed --noconfirm -S nvm npm deno
 
-		## Python
+		## py
 		sudo pacman --needed --noconfirm -S python-pip python-pipx
 
 		## virtual machines
