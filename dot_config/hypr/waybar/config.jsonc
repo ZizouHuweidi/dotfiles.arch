@@ -1,6 +1,6 @@
 {
   "layer": "top",
-  // "height": 20, // Waybar height (to be removed for auto height)
+  "height": 31,
   "position": "bottom",
   "modules-left": [
     "hyprland/workspaces",
@@ -8,18 +8,17 @@
     "hyprland/language",
     "idle_inhibitor"
   ],
-  "modules-center": ["mpd", "clock", "custom/notification"],
+  "modules-center": [
+    "mpd",
+    "clock",
+    "custom/notification"
+  ],
   "modules-right": [
-    "cpu",
-    "temperature",
-    "custom/sep",
-    "memory",
-    "disk",
-    "custom/sep",
-    "battery",
+    "group/compute",
+    "group/memory",
     "pulseaudio",
     "custom/sep",
-    "upower",
+    "group/power",
     "tray"
   ],
   // Modules configuration
@@ -52,7 +51,9 @@
   "mpris": {
     "format": "{title} ",
     "format-paused": "{title} ",
-    "ignored-players": ["brave"]
+    "ignored-players": [
+      "brave"
+    ]
   },
   "mpd": {
     "format": "{artist} - {title} ",
@@ -91,13 +92,20 @@
   "temperature": {
     "critical-threshold": 70,
     "format": "{temperatureC}°C {icon}",
-    "format-icons": ["", "", ""],
+    "format-icons": [
+      "",
+      "",
+      ""
+    ],
     "thermal-zone": 5,
     "hwmon-path": "/sys/class/hwmon/hwmon5/temp1_input"
   },
   "backlight": {
     "format": "{icon} {percent}%",
-    "format-icons": [" ", " "],
+    "format-icons": [
+      " ",
+      " "
+    ],
     "on-scroll-up": "light -A 1",
     "on-scroll-down": "light -U 1"
   },
@@ -111,7 +119,13 @@
     "format-charging": "{capacity}% ",
     "format-plugged": " ",
     "format-alt": "{time} {icon}",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   "upower": {
     // "format": "{percentage} ",
@@ -131,7 +145,11 @@
       "phone": "",
       "portable": "",
       "car": " ",
-      "default": ["", "", ""]
+      "default": [
+        "",
+        "",
+        ""
+      ]
     },
     "tooltip-format": "{desc}, {volume}%",
     "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
@@ -153,5 +171,38 @@
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true
+  },
+  "group/compute": {
+    "orientation": "horizontal",
+    "modules": [
+      "temperature",
+      "cpu"
+    ],
+    "drawer": {
+      "transition-duration": 200,
+      "transition-left-to-right": false
+    }
+  },
+  "group/memory": {
+    "orientation": "horizontal",
+    "modules": [
+      "memory",
+      "disk"
+    ],
+    "drawer": {
+      "transition-duration": 200,
+      "transition-left-to-right": false
+    }
+  },
+  "group/power": {
+    "orientation": "horizontal",
+    "modules": [
+      "battery",
+      "upower"
+    ],
+    "drawer": {
+      "transition-duration": 200,
+      "transition-left-to-right": false
+    }
   }
 }

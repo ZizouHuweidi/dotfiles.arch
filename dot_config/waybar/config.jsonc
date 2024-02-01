@@ -1,6 +1,6 @@
 {
   "layer": "top",
-  // "height": 20, // Waybar height (to be removed for auto height)
+  "height": 31,
   "position": "bottom",
   "modules-left": [
     "sway/mode",
