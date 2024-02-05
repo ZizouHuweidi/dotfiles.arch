@@ -4,7 +4,7 @@ audio_device_state:1:Visualizer
 audio_device_state:1:lossless
 state: pause
 current: 81
-time: 6543.251000
+time: 1596.483000
 random: 0
 repeat: 1
 single: 0
@@ -106,4 +106,5 @@ playlist_begin
 90:Ali_Jaber/033.mp3
 91:Maher_Al-Muaiqly/007.mp3
 92:Mahmood_Ali_Albana/005.mp3
+93:Mohammed_Siddiq_Al-Minshawi/017.mp3
 playlist_end

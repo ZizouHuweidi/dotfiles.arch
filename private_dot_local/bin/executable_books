@@ -22,7 +22,7 @@ declare -a options=(
 	"Cloud Native Programming with Go - $HOME/Documents/books/tech/backend/distributed/cloud-native-programming-with-golang.epub"
 	"Writing an interpreter in Go - $HOME/Documents/books/tech/compilers/writing-an-interpreter-in-go.epub"
 	"Writing a compiler in Go - $HOME/Documents/books/tech/compilers/writing-a-compiler-in-go.pdf"
-	"The Pragmatic Programmer - $HOME/Documents/books/tech/programming/The-Pragmatic-Programmer.pdf"
+	"The Pragmatic Programmer - $HOME/Documents/books/tech/programming/the-pragmatic-programmer.pdf"
 	"Mastering Kubernetes - $HOME/Documents/books/tech/devops/kubernetes/mastering-kubernetes.pdf"
 	"Networking and Kubernetes - $HOME/Documents/books/tech/devops/kubernetes/networking-and-kubernetes.pdf"
 	# "quit"
