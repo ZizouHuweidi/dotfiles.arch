@@ -3,8 +3,8 @@ audio_device_state:1:PipeWire Sound Server
 audio_device_state:1:Visualizer
 audio_device_state:1:lossless
 state: pause
-current: 81
-time: 6241.168000
+current: 82
+time: 2899.542000
 random: 0
 repeat: 1
 single: 0

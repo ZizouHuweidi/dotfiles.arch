@@ -114,7 +114,7 @@ bindgesture swipe:down workspace back_and_forth
 # -- Apps --
 
 bindsym $mod+Return exec kitty 
-bindsym $mod+Control+Return exec nemo
+bindsym $mod+Control+Return exec thunar
 bindsym $mod+Shift+e exec  code
 bindsym $mod+Shift+v exec  kitty -e nvim
 bindsym $mod+Shift+b exec  vivaldi-stable

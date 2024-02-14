@@ -13,7 +13,7 @@ install_packages() {
 	sudo pacman --needed --noconfirm -S gammastep
 
 	## files
-	sudo pacman --needed --noconfirm -S zathura zathura-pdf-mupdf
+	sudo pacman --needed --noconfirm -S zathura zathura-pdf-mupdf thunar
 	sudo pacman --needed --noconfirm -S neovim neovide file-roller
 	sudo pacman --needed --noconfirm -S lf transmission-gtk transmission-cli ffmpegthumbnailer yt-dlp
 
@@ -88,7 +88,7 @@ install_packages() {
 		yay --needed --noconfirm -S visual-studio-code-bin docker docker-compose
 
 		## go
-		sudo pacman --needed --noconfirm -S go hugo ollama caddy protobuf syncthing
+		sudo pacman --needed --noconfirm -S go hugo ollama caddy protobuf syncthing rsync
 
 		## ts
 		yay --needed --noconfirm -S nvm npm deno
