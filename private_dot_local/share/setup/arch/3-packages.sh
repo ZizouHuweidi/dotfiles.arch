@@ -90,11 +90,14 @@ install_packages() {
 		## go
 		sudo pacman --needed --noconfirm -S go hugo ollama caddy protobuf syncthing rsync
 
-		## ts
-		yay --needed --noconfirm -S nvm npm deno
+    ## py
+    sudo pacman --needed --noconfirm -S python-pip python-pipx
 
-		## py
-		sudo pacman --needed --noconfirm -S python-pip python-pipx
+		## ts
+		yay --needed --noconfirm -S nvm npm deno jdk-openjdk kotlin
+
+    ## rs
+    sudo pacman --needed --noconfirm -S rustup clang zig
 
 		## virtual machines
 		# sudo pacman --needed --noconfirm -S virt-manager
