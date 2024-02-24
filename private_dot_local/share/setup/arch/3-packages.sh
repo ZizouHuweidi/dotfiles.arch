@@ -94,7 +94,7 @@ install_packages() {
     sudo pacman --needed --noconfirm -S python-pip python-pipx
 
 		## ts
-		yay --needed --noconfirm -S nvm npm deno jdk-openjdk kotlin
+		yay --needed --noconfirm -S nvm npm deno
 
     ## rs
     sudo pacman --needed --noconfirm -S rustup clang zig
